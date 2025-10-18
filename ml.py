@@ -6,7 +6,7 @@ import seaborn as sns
 
 # Load your dataset
 # Replace with your actual data path
-df = pd.read_csv("C:\\Users\\dodla\\OneDrive\\Desktop\\fake_transactions.csv")
+df = pd.read_csv("source path")
 
 # Sample: Let's say we have the following columns
 # ['transaction_id', 'customer_id', 'amount', 'transaction_type' ]
@@ -41,3 +41,4 @@ plt.figure(figsize=(12, 6))
 sns.scatterplot(x='hour', y='amount', hue='is_anomaly', data=df, palette={0: 'blue', 1: 'red'})
 plt.title("Transaction Anomalies Detected (Red = Potential Fraud)")
 plt.show()
+
